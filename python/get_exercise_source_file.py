@@ -1,9 +1,11 @@
-#!/usr/bin/env -S uv run --script
+#!/usr/bin/env uvrs
 # /// script
 # requires-python = ">=3.9"
 # dependencies = [
 #     "requests",
 # ]
+# [tool.uv]
+# exclude-newer = "2025-10-18T16:44:57Z"
 # ///
 import argparse
 import requests
