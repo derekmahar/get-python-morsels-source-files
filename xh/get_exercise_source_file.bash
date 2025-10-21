@@ -13,7 +13,7 @@ fi
 password=${1:-}
 source_file_url=${2:-}
 
-# Use xh to retrieve source file after submitting password form.
+# Use xh to submit password form and retrieve source file.
 xh $source_file_url \
   form-name="form 1" \
   password="$password" \

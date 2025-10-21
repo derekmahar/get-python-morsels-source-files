@@ -13,7 +13,7 @@ fi
 password=${1:-}
 source_file_url=${2:-}
 
-# Use HTTPie to retrieve source file after submitting password form.
+# Use HTTPie to submit password form and retrieve source file.
 http $source_file_url \
   form-name="form 1" \
   password="$password" \
