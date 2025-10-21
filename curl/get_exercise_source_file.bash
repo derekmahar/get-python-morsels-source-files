@@ -13,7 +13,7 @@ fi
 password=${1:-}
 source_file_url=${2:-}
 
-# Retrieve source file after submitting password form.
+# Use curl to retrieve source file after submitting password form.
 curl $source_file_url \
   --cookie "" \
   --form-string "form-name=form 1" \
